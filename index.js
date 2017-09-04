@@ -13,8 +13,12 @@ for (var i = 0; i < item.length; i++) {
     let Switcher = function(elem){
 	    remover.classList.remove('active'); 
 	    target.classList.add('active');
-	    if(target.classList.contains('one')){
-	    	document.querySelector('#one').classList.toggle('hide');
+	    let data = target.dataset;
+	    let fixDiv = data.index;
+	    console.log(fixDiv);
+
+	    if(target.classList.contains('someClass')){
+	    	document.querySelector('#someClass').classList.toggle('hide');
 	    }
 
 
