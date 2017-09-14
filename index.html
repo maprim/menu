@@ -8,8 +8,12 @@
 </head>
 <body>
 	<style>
-		.hide{
+		.content{
 			display:none;
+		}
+
+		.show{
+			display: block;
 		}
 		
 	</style>
@@ -23,21 +27,22 @@
 		</ul>
 
 
-		<div id="one" class="hide one">
+		<div id="one" class="show content">
 			<h1>Some content in first div</h1>
 		</div>
-		<div id="two" class="two">
+		<div id="two" class="content">
 			<h1>Some content in second div</h1>
 		</div>
-		<div id="three" class="hide three">
+		<div id="three" class="content">
 			<h1>Some content in third div</h1>
 		</div>
-		<div id="four" class="hide four">
+		<div id="four" class="content">
 			<h1>Some content in fourth div</h1>
 		</div>
 	</div>
 
 	<script src="index.js"></script>
+	<script src="scroller.js"></script>
 	
 </body>
 </html>

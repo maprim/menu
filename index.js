@@ -1,7 +1,6 @@
 'use strict'
 
-let item = document.querySelectorAll('li');
-let divs = document.querySelectorAll('div')
+let item = document.querySelectorAll('li'); 
 
 for (var i = 0; i < item.length; i++) {
     item[i].addEventListener('click', function(event) {
@@ -15,12 +14,8 @@ for (var i = 0; i < item.length; i++) {
 	    target.classList.add('active');
 	    let data = target.dataset;
 	    let fixDiv = data.index;
-	    console.log(fixDiv);
-
-	    if(target.classList.contains('someClass')){
-	    	document.querySelector('#someClass').classList.toggle('hide');
-	    }
-
+        document.querySelector('.show').classList.remove('show');
+        document.getElementById(fixDiv).classList.add('show');
 
     }
     
