@@ -19,7 +19,7 @@ for (var i = 0; i < item.length; i++) {
 
     }
     
-    Switcher(remover);
+     Switcher(remover);
 
     
 })
